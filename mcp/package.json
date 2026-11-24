@@ -1,0 +1,28 @@
+{
+  "name": "pingpong-mcp",
+  "version": "0.1.0",
+  "description": "Runs the installed pingpong CLI's MCP server over stdio, and says how to install pingpong where it is missing",
+  "license": "MIT",
+  "mcpName": "dev.pingpong/pingpong",
+  "type": "module",
+  "homepage": "https://pingpong.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smallmodelslab/pingpong.git",
+    "directory": "mcp"
+  },
+  "bugs": "https://github.com/smallmodelslab/pingpong/issues",
+  "bin": {
+    "pingpong-mcp": "launcher.js"
+  },
+  "files": [
+    "launcher.js"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "lint": "oxlint",
+    "test": "node --test"
+  }
+}

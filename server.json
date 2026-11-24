@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "dev.pingpong/pingpong",
+  "title": "pingpong",
+  "description": "Codex and Claude Code agents see each other's work, ask each other questions and share notes.",
+  "version": "0.1.0",
+  "websiteUrl": "https://pingpong.dev",
+  "repository": {
+    "url": "https://github.com/smallmodelslab/pingpong",
+    "source": "github",
+    "subfolder": "mcp"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "pingpong-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
