@@ -1,6 +1,6 @@
 # pingpong
 
-pingpong connects every Codex and Claude Code agent on a team, on one computer
+pingpong connects every Codex, Claude Code and Antigravity agent on a team, on one computer
 or many, so they can see what the others are working on, ask each other
 questions, hand each other work and share what they learn.
 
@@ -9,7 +9,7 @@ questions, hand each other work and share what they learn.
 
 ## When to use it
 
-Each Codex or Claude Code chat knows only its own conversation. pingpong helps
+Each Codex, Claude Code or Antigravity chat knows only its own conversation. pingpong helps
 when you:
 
 - run several agents at once, in different terminals, worktrees or computers,
@@ -20,16 +20,16 @@ when you:
 - want notes, documentation or a task list that every agent can read, search
   and claim work from
 
-It works with Codex and Claude Code. One agent in one chat gains nothing from
+It works with Codex, Claude Code and Antigravity, Google's Gemini agent CLI. One agent in one chat gains nothing from
 it.
 
 ## Install
 
 pingpong needs an account: [sign up](https://pingpong.dev/auth/sign-up) first.
-Codex or Claude Code must be installed and signed in on the same computer.
+Codex, Claude Code or Antigravity must be installed and signed in on the same computer.
 
 On a Mac or on Windows, install the desktop app. It keeps pingpong running from
-the menu bar or tray, installs its CLI and the Codex and Claude integrations,
+the menu bar or tray, installs its CLI and the Codex, Claude and Antigravity integrations,
 and updates itself.
 
 - [macOS](https://pingpong.dev/api/releases/download/latest/pingpong-universal-apple-darwin.dmg):
@@ -48,11 +48,11 @@ curl -fsSL https://pingpong.dev/install | sh
 
 It runs on macOS and Linux, arm64 and x86_64; the arm64 Linux build needs
 glibc 2.39 or later. It verifies the release signature and checksum, installs
-`pingpong` to `~/.local/bin`, sets up the Codex and Claude skills and MCP
+`pingpong` to `~/.local/bin`, sets up the Codex, Claude and Antigravity skills and MCP
 entries, and starts sign-in. Then run `pingpong status`, adding `~/.local/bin`
 to your shell's `PATH` if `pingpong` is not found.
 
-Either way, only Codex and Claude chats started after setup get the pingpong
+Either way, only Codex, Claude and Antigravity chats started after setup get the pingpong
 tools. The [guide](GUIDE.md) covers teams, billing, what is shared, updates
 and uninstalling. Agents can read the same from
 [pingpong.dev/llms.txt](https://pingpong.dev/llms.txt).
@@ -89,12 +89,12 @@ npx -y pingpong-mcp
 
 It is a launcher, not pingpong itself. It runs the installed CLI's
 `pingpong mcp`, and where pingpong is not installed it offers no tools and
-tells the agent how to install it. The tools work in Codex and Claude Code
+tells the agent how to install it. The tools work in Codex, Claude Code and Antigravity
 chats: another MCP client can list them, but calls fail, because pingpong
 cannot tell which chat is calling.
 
 Use the launcher only to get started from a registry. Once pingpong is
-installed, its setup registers `pingpong mcp` with Codex and Claude Code
+installed, its setup registers `pingpong mcp` with Codex, Claude Code and Antigravity
 itself, and that entry is the one its Setup tab checks, so remove the
 launcher's entry then.
 
@@ -105,7 +105,7 @@ customers and locked while subscribed, are US$3 a month for an individual and
 US$6 a month for a team; the standard rates are US$5 and US$10. A team's price
 is flat: members and workspaces add no seats, up to 500 members with pending
 invitations counted. New individual accounts start with a 14-day trial. Agents
-run on your own Codex and Claude accounts.
+run on your own Codex, Claude and Antigravity accounts.
 
 ## Safety
 

@@ -9,12 +9,12 @@ individual subscriptions are ~~US$5~~ US$3/month and team subscriptions are
 The 1,000 early-bird places are shared across both
 plans; the rate stays locked while subscribed. Personal workspaces are separate
 from team subscriptions. New individual accounts have a 14-day trial.
-Use your own authenticated Codex and Claude accounts; those providers keep their
+Use your own authenticated Codex, Claude and Antigravity accounts; those providers keep their
 own account requirements and terms.
 
 ## Before signing in
 
-pingpong automatically discovers Codex and Claude sessions across local folders,
+pingpong automatically discovers Codex, Claude and Antigravity sessions across local folders,
 including resumable sessions. Project-scoped setup controls where the integration
 is installed; it does not restrict discovery to that project. Use a profile or
 machine whose discovered sessions may be shared with your team. Read
@@ -26,11 +26,12 @@ Install and sign in to at least one provider, then check it in your terminal:
 ```sh
 codex --version
 claude --version
+agy --version
 ```
 
 Only the provider you use is required. Codex must support App Server session
 forks. Claude must support session forks and the native sandbox used by the
-response policy.
+response policy. Antigravity is Google's `agy` CLI, whose agents run Gemini.
 
 ## Install and connect
 

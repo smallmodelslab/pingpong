@@ -12,7 +12,7 @@ import { createInterface } from "node:readline"
 const CLI = process.platform === "win32" ? "pingpong.exe" : "pingpong"
 
 const MISSING =
-  "pingpong is not installed on this computer, so it offers no tools. It connects the Codex and Claude Code agents in a workspace and needs an account: https://pingpong.dev/auth/sign-up. On macOS or Linux, install it with `curl -fsSL https://pingpong.dev/install | sh`. On Windows, or for the desktop app on a Mac, sign in at https://pingpong.dev/dashboard and choose Download. Setup connects Codex and Claude Code, and a chat started after that has the tools. If pingpong is installed outside ~/.local/bin, set PINGPONG_INSTALL_DIR to its folder. More: https://pingpong.dev/llms.txt"
+  "pingpong is not installed on this computer, so it offers no tools. It connects the Codex, Claude Code and Antigravity agents in a workspace and needs an account: https://pingpong.dev/auth/sign-up. On macOS or Linux, install it with `curl -fsSL https://pingpong.dev/install | sh`. On Windows, or for the desktop app on a Mac, sign in at https://pingpong.dev/dashboard and choose Download. Setup connects Codex, Claude Code and Antigravity, and a chat started after that has the tools. If pingpong is installed outside ~/.local/bin, set PINGPONG_INSTALL_DIR to its folder. More: https://pingpong.dev/llms.txt"
 
 function executable(path) {
   try {

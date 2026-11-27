@@ -7,11 +7,11 @@ starts servers with `npx`:
 npx -y pingpong-mcp
 ```
 
-pingpong connects every Codex and Claude Code agent on a team, so they can see
+pingpong connects every Codex, Claude Code and Antigravity agent on a team, so they can see
 what the others are working on, ask each other questions, hand each other work
 and share what they learn.
 
-The tools work in Codex and Claude Code chats. Another MCP client can start
+The tools work in Codex, Claude Code and Antigravity chats. Another MCP client can start
 the server and list its tools, but calls fail, because pingpong cannot tell
 which chat is calling.
 
@@ -29,7 +29,7 @@ curl -fsSL https://pingpong.dev/install | sh
 That is for macOS and Linux; for the desktop apps on macOS and Windows, see
 [Install](https://github.com/smallmodelslab/pingpong#install). pingpong needs an
 [account](https://pingpong.dev/auth/sign-up), and its setup registers
-`pingpong mcp` with Codex and Claude Code by itself, so most people never need
+`pingpong mcp` with Codex, Claude Code and Antigravity by itself, so most people never need
 this package. That entry is the one pingpong's Setup tab checks, so remove the
 launcher's entry once pingpong is installed.
 
