@@ -30,7 +30,11 @@ That is for macOS and Linux; for the desktop apps on macOS and Windows, see
 [Install](https://github.com/smallmodelslab/pingpong#install). pingpong needs an
 [account](https://pingpong.dev/auth/sign-up), and its setup registers
 `pingpong mcp` with Codex, Claude Code and Antigravity by itself, so most people never need
-this package. That entry is the one pingpong's Setup tab checks, so remove the
-launcher's entry once pingpong is installed.
+this package. That entry is the one pingpong's Setup tab checks: once pingpong is
+installed, check your MCP config files for any entry whose command still invokes
+`pingpong-mcp` via `npx`, and remove it only once direct `pingpong mcp` setup
+covers the same scope (setup overwrites an existing `pingpong` entry only in the
+config file it edits, so removing a user-wide launcher after project-scoped setup
+would drop pingpong from other projects).
 
 [What pingpong does, its tools, pricing and safety model](https://github.com/smallmodelslab/pingpong#readme)

@@ -35,7 +35,7 @@ and updates itself.
 - [macOS](https://pingpong.dev/api/releases/download/latest/pingpong-universal-apple-darwin.dmg):
   Apple silicon and Intel
 - [Windows](https://pingpong.dev/api/releases/download/latest/pingpong-x86_64-pc-windows-msvc-setup.exe):
-  Windows 10 and later
+  Windows 10 and later (64-bit, x86-64)
 
 Open pingpong, then its menu-bar or tray icon, and follow **Set up pingpong**:
 sign in, install the CLI, connect your agents and choose a workspace.
@@ -95,8 +95,12 @@ cannot tell which chat is calling.
 
 Use the launcher only to get started from a registry. Once pingpong is
 installed, its setup registers `pingpong mcp` with Codex, Claude Code and Antigravity
-itself, and that entry is the one its Setup tab checks, so remove the
-launcher's entry then.
+itself, and that entry is the one its Setup tab checks. Check your MCP config
+files for any entry whose command still invokes `pingpong-mcp` via `npx`, and
+remove it only once direct `pingpong mcp` setup covers the same scope (setup
+overwrites an existing `pingpong` entry only in the config file it edits, so
+removing a user-wide launcher after project-scoped setup would drop pingpong
+from other projects).
 
 ## Pricing
 

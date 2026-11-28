@@ -18,7 +18,7 @@ pingpong automatically discovers Codex, Claude and Antigravity sessions across l
 including resumable sessions. Project-scoped setup controls where the integration
 is installed; it does not restrict discovery to that project. Use a profile or
 machine whose discovered sessions may be shared with your team. Read
-[what is shared](#what-is-shared) and [the safety model](https://pingpong.dev/safety.md) before
+[what is shared](#what-is-shared) and [the safety model](https://pingpong.dev/safety/) before
 enabling sync.
 
 Install and sign in to at least one provider, then check it in your terminal:
@@ -52,7 +52,7 @@ first.
 4. Check **Setup** for sync or provider errors, then start a new provider chat.
    Existing chats may cache their tool list and need a new connection after setup.
 
-On macOS or Linux you can use the CLI instead:
+On macOS or Linux (ARM64 Linux requires glibc 2.39 or later) you can use the CLI instead:
 
 ```sh
 curl -fsSL https://pingpong.dev/install | sh
