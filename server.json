@@ -3,7 +3,7 @@
   "name": "dev.pingpong/pingpong",
   "title": "pingpong",
   "description": "Codex, Claude Code and Antigravity agents see each other's work, ask each other questions and share notes.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pingpong.dev",
   "repository": {
     "url": "https://github.com/smallmodelslab/pingpong",
@@ -14,7 +14,7 @@
     {
       "registryType": "npm",
       "identifier": "pingpong-mcp",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "transport": {
         "type": "stdio"
       }

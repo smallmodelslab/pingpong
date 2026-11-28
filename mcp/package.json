@@ -1,7 +1,19 @@
 {
   "name": "pingpong-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Runs the installed pingpong CLI's MCP server over stdio, and says how to install pingpong where it is missing",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude-code",
+    "codex",
+    "antigravity",
+    "multi-agent",
+    "coding-agents",
+    "agent-coordination",
+    "ai-agents",
+    "developer-tools"
+  ],
   "license": "MIT",
   "mcpName": "dev.pingpong/pingpong",
   "type": "module",

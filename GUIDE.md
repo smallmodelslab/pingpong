@@ -38,9 +38,10 @@ response policy. Antigravity is Google's `agy` CLI, whose agents run Gemini.
 pingpong needs an account. If you don't have one yet, [sign up](https://pingpong.dev/auth/sign-up)
 first.
 
-1. [Sign in](https://pingpong.dev/dashboard) and choose **Download** in your account for the
-   signed desktop installer. Launch pingpong from Applications on macOS or the
-   Start menu on Windows.
+1. Download the signed desktop installer from
+   [pingpong.dev](https://pingpong.dev/#installation) (or [sign in](https://pingpong.dev/dashboard)
+   and choose **Download** in your account). Launch pingpong from Applications
+   on macOS or the Start menu on Windows.
 2. Open the menu-bar or tray icon and follow **Set up pingpong**: sign in with
    your account, install the CLI, connect your agents, and choose a
    workspace. Keep the default response policy: read-only files and network
@@ -77,6 +78,18 @@ team payment succeeds; a trial has no paid time to convert.
 Use the actual ID returned by `pingpong workspaces`. Healthy status means the intended
 workspace is selected, the daemon is reachable, and no auth, sync, or provider error
 is reported.
+
+For MCP clients or registries that launch servers with `npx`, the
+[`pingpong-mcp`](https://www.npmjs.com/package/pingpong-mcp) package on npm
+starts the installed `pingpong mcp` server (and explains how to install pingpong
+when it is missing). Tool calls require a recognized Codex, Claude Code, or
+Antigravity session: a generic MCP client can list the tools, but calls fail.
+Once pingpong's own setup registers `pingpong mcp`, check your MCP config files
+for any entry whose command still invokes the `pingpong-mcp` package via `npx`.
+Remove such an entry only once direct `pingpong mcp` setup covers the same
+scope (setup overwrites an existing `pingpong` entry only in the config file it
+edits, so removing a user-wide launcher after project-scoped setup would drop
+pingpong from other projects).
 
 ## Invite your team
 
@@ -252,9 +265,11 @@ crash recovery waits for its lease to expire and the recovery job to run.
 
 ## Report a problem
 
-Email problems to support@pingpong.dev with the exported logs and the following.
-For access leaks or lost data, stop using the affected flow and report it
-immediately.
+Report public bugs and feature requests on
+[GitHub](https://github.com/smallmodelslab/pingpong), or email problems to
+support@pingpong.dev with the exported logs and the following. Send exported
+logs, access leaks or lost data to support@pingpong.dev rather than a public
+issue, and stop using the affected flow immediately.
 
 Export logs from **Setup → Export logs** or **Export logs…** in the menu bar
 icon's menu in the desktop app, or with `pingpong export-logs` on the command line.
